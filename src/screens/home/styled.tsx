@@ -85,15 +85,6 @@ const styles = StyleSheet.create({
     height: 32,
     width: 32,
   },
-  informTitle: {
-    color: COLORS.WHITE,
-    fontSize: 20,
-    fontWeight: '500',
-  },
-  unitText: {
-    color: 'rgba(255,255,255, 0.5)',
-    fontSize: 14,
-  },
   informSubTitle: {
     color: COLORS.WHITE,
     fontSize: 12,
@@ -107,12 +98,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     fontWeight: '700',
     fontSize: 12,
-  },
-  informBadgeIcon: {
-    color: COLORS.WHITE,
-    borderRadius: 100,
-    backgroundColor: 'red',
-    padding: 5,
   },
 });
 

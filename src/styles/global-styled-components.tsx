@@ -37,7 +37,22 @@ const globalStyles = StyleSheet.create({
   btnText: {
     color: COLORS.WHITE,
     fontWeight: '500'
-  }
+  },
+  informBadgeIcon: {
+    color: COLORS.WHITE,
+    borderRadius: 100,
+    backgroundColor: 'red',
+    padding: 5,
+  },
+  informTitle: {
+    color: COLORS.WHITE,
+    fontSize: 20,
+    fontWeight: '500',
+  },
+  unitText: {
+    color: 'rgba(255,255,255, 0.5)',
+    fontSize: 14,
+  },
 });
 
 export {globalStyles, AppPrimaryButton, AppTitle, AppText};

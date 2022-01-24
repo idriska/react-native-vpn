@@ -62,24 +62,24 @@ const Home = () => {
               style={styles.informBadgeImg}
               resizeMode="contain"
             />
-            <Text style={styles.informTitle}>USA</Text>
+            <Text style={globalStyles.informTitle}>USA</Text>
             <Text style={styles.informSubTitle}>NEW YOURK CITY</Text>
           </View>
           <View style={styles.informBox}>
-            <Feather name="bar-chart-2" style={[styles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#8428f0'}]} size={22}/>
-            <Text style={styles.informTitle}>10 <Text style={styles.unitText}>ms</Text></Text>
+            <Feather name="bar-chart-2" style={[globalStyles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#8428f0'}]} size={22}/>
+            <Text style={globalStyles.informTitle}>10 <Text style={globalStyles.unitText}>ms</Text></Text>
             <Text style={styles.informSubTitle}>PING</Text>
           </View>
         </View>
         <View style={styles.informSection}>
           <View style={styles.informBox}>
-            <Feather name="arrow-down" style={[styles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#fa6f4d'}]} size={22}/>
-            <Text style={styles.informTitle}>15,47 <Text style={styles.unitText}>mbps</Text></Text>
+            <Feather name="arrow-down" style={[globalStyles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#fa6f4d'}]} size={22}/>
+            <Text style={globalStyles.informTitle}>15,47 <Text style={globalStyles.unitText}>mbps</Text></Text>
             <Text style={styles.informSubTitle}>DOWNLOAD</Text>
           </View>
           <View style={styles.informBox}>
-            <Feather name="arrow-up" style={[styles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#29bac1'}]} size={22}/>
-            <Text style={styles.informTitle}>2,50 <Text style={styles.unitText}>mbps</Text></Text>
+            <Feather name="arrow-up" style={[globalStyles.informBadgeIcon, globalStyles.fitContent, {backgroundColor: '#29bac1'}]} size={22}/>
+            <Text style={globalStyles.informTitle}>2,50 <Text style={globalStyles.unitText}>mbps</Text></Text>
             <Text style={styles.informSubTitle}>UPLOAD</Text>
           </View>
         </View>
@@ -97,7 +97,7 @@ const Home = () => {
               </View>
             </View>
            </View>
-           <Feather name="arrow-right" style={[styles.informBadgeIcon, {backgroundColor: '#2b2a68'}]} size={22}/>
+           <Feather name="arrow-right" style={[globalStyles.informBadgeIcon, {backgroundColor: '#2b2a68'}]} size={22}/>
         </View>
       </View>
     </AppContainer>
