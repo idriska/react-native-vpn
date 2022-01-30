@@ -3,12 +3,36 @@ import * as COLORS from './colors';
 import LinearGradient from 'react-native-linear-gradient';
 import {StyleSheet, Dimensions, Platform} from 'react-native';
 
+const AppHeader = styled.View({
+  width: '100%',
+  height: 50,
+  paddingHorizontal: 10,
+  alignItems: 'center',
+  flexDirection: 'row',
+});
+
+const AppHeaderTextView = styled.View({
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  justifyContent: 'center',
+  alignItems: 'center',
+});
+
+const AppHeaderText = styled.Text({
+  fontSize: 18,
+  fontWeight: '500',
+  color: COLORS.WHITE
+})
+
 const AppPrimaryButton = styled(LinearGradient)({
   width: '100%',
   height: '100%',
   borderRadius: 100,
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
 });
 
 const AppTitle = styled.Text({
@@ -36,13 +60,16 @@ const globalStyles = StyleSheet.create({
   },
   btnText: {
     color: COLORS.WHITE,
-    fontWeight: '500'
+    fontWeight: '500',
   },
   informBadgeIcon: {
     color: COLORS.WHITE,
     borderRadius: 100,
     backgroundColor: 'red',
     padding: 5,
+  },
+  headerIcon: {
+    color: COLORS.WHITE,
   },
   informTitle: {
     color: COLORS.WHITE,
@@ -55,4 +82,12 @@ const globalStyles = StyleSheet.create({
   },
 });
 
-export {globalStyles, AppPrimaryButton, AppTitle, AppText};
+export {
+  globalStyles,
+  AppHeader,
+  AppHeaderTextView,
+  AppHeaderText,
+  AppPrimaryButton,
+  AppTitle,
+  AppText,
+};
