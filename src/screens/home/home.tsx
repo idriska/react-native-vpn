@@ -14,10 +14,28 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
 
+import RNSimpleOpenvpn, { addVpnStateListener, removeVpnStateListener } from '../../custom_module/openvpn/index';
+
+
 const UsaImg = require('../../assets/img/usa.png');
 const CrownImg = require('../../assets/img/crown.png');
 
 const Home = () => {
+
+  async function startOvpn() {
+    try {
+      await RNSimpleOpenvpn.connect({
+        remoteAddress: '3.130.41.91 443',
+        ovpnFileName: 'idriska',
+        assetsPath: '../../custom_module/openvpn/idriska.ovpn',
+        providerBundleIdentifier: 'com.example.RNSimpleOvpnTest.NEOpenVPN',
+        localizedDescription: 'RNSimpleOvpn',
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <AppContainer>
       <StatusBar backgroundColor={COLORS.PRIMARY} />
@@ -36,7 +54,7 @@ const Home = () => {
       </View>
 
       <View style={styles.powerContainer}>
-        <TouchableOpacity style={styles.powerOuterContainer}>
+        <TouchableOpacity style={styles.powerOuterContainer} onPress={startOvpn}>
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}

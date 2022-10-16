@@ -44,7 +44,7 @@ const AppTitle = styled.Text({
 const AppText = styled.Text({
   fontSize: 14,
   color: COLORS.WHITE,
-  lineHeight: 26,
+  lineHeight: '26px',
 });
 
 const globalStyles = StyleSheet.create({

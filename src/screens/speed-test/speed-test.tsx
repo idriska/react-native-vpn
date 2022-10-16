@@ -31,8 +31,8 @@ const dataPing = {
     datasets: [
       {
         data: [17, 21, 22, 19, 15, 17, 22, 21],
-        color: (opacity = 1) => `#8428f0`, // optional
-        strokeWidth: 2, // optional
+        color: (opacity = 1) => `#8428f0`,
+        strokeWidth: 2,
       },
     ],
   },
@@ -40,7 +40,7 @@ const dataPing = {
     backgroundGradientFrom: '#19185a',
     backgroundGradientTo: '#19185a',
     strokeWidth: 2,
-    useShadowColorFromDataset: false, // optional
+    useShadowColorFromDataset: false,
     propsForDots: {
       r: '0',
     },
